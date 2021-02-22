@@ -1,3 +1,6 @@
+Taylor Olson
+codegrade check 2
+
 # Sprint Challenge - JavaScript Fundamentals
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
@@ -29,13 +32,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+.forEach is an array method that executes a provided function once for each element in the array. It will return an iteration of the function being ran on each element. This returns the result of the function being ran on each element ONLY. It does NOT create a new array like .map does.
+
+.map is an array method that creates a new array with the results from calling a function on each element of the array. It will return a whole new array; unlike .forEach.
+
 2. Explain the difference between a callback and a higher order function.
+
+A higher order function is a function that takes another function as an argument and/or returns a function as the output to its callers.
+
+A callback function, however, is a function passed into another function as an argument WITH the expectation that the callback will be called within the function to which it was passed.
 
 3. What is closure?
 
+Closure is a function and its references to the surrounding state; or "lexical environment". In other words, closure is when we access an outer function's scope from an inner function.
+
 4. Describe the four rules of the 'this' keyword.
 
+Is the function called by new?
+Is the function called by call(), apply(), or bind()?
+Is the function called as a method?
+Is the function  called in the global scope?
+
 5. Why do we need super() in an extended class?
+
+The super() method allows us to call the parent's constructor method and get access to the parent's properties and methods.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
