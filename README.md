@@ -1,5 +1,5 @@
 Taylor Olson
-codegrade check
+codegrade check 2
 
 # Sprint Challenge - JavaScript Fundamentals
 
