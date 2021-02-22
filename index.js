@@ -1,5 +1,4 @@
 //🚀🚀🚀  Topic #1 Closures 🚀🚀🚀//
-// codegrade test four
 /* 🚀🚀🚀🤓 Task 1: 🤓🚀🚀🚀 
 Study the code below and explain in your own words why nested function can access the variable internal. */
 
@@ -17,7 +16,9 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+//The function nestedFunction() can access the variable internal because of closure.
+//The concept of closure states that a function may reach outside of its own scope into an outer function's scope.
+//however an outer function cannot reach into a function that is nested deeper.
 
 
 
@@ -29,11 +30,13 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(num) {
+  let count = 0;
+  for (let i=0; i <= num; i++) {
+    count += i;
   }
- 
+  return count;
+};
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
@@ -191,7 +194,6 @@ class CuboidMakerTwo{
 // console.log(cuboidTwo.volume()); // 100
 // console.log(cuboidTwo.surfaceArea()); // 130
 
-let name = "taylor";
 
 // 🦄 💪 Stretch Task: Extend the base class CuboidMaker with a sub class called CubeMaker.  Find out the formulas for volume and surface area for cubes and create those methods using the dimension properties from CuboidMaker.  Test your work by logging out your volume and surface area. 🦄 💪
   
