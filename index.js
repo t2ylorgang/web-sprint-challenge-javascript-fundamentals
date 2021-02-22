@@ -37,6 +37,8 @@ function summation(num) {
   }
   return count;
 };
+console.log(summation(4));
+
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
@@ -60,9 +62,12 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(arr) {
+    let displayNames = [];
+    arr.forEach(obj => displayNames.push(`name: ${obj.animal_name}, scientific: ${obj.scientific_name}`));
+    return displayNames;
   }
+  console.log(animalNames(zooAnimals));
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -71,9 +76,13 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+  function lowerCaseNames(arr) {
+    let namesLowerCase = [];
+    for (let i=0; i < arr.length; i++) {
+      namesLowerCase.push(arr[i].animal_name.toLowerCase())
+    }
+    return namesLowerCase;
+  };
   
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
