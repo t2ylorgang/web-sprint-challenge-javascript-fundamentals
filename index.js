@@ -1,5 +1,5 @@
 //🚀🚀🚀  Topic #1 Closures 🚀🚀🚀//
-// codegrade test THREE
+// codegrade test four
 /* 🚀🚀🚀🤓 Task 1: 🤓🚀🚀🚀 
 Study the code below and explain in your own words why nested function can access the variable internal. */
 
@@ -191,9 +191,7 @@ class CuboidMakerTwo{
 // console.log(cuboidTwo.volume()); // 100
 // console.log(cuboidTwo.surfaceArea()); // 130
 
-
-
-
+let name = "taylor";
 
 // 🦄 💪 Stretch Task: Extend the base class CuboidMaker with a sub class called CubeMaker.  Find out the formulas for volume and surface area for cubes and create those methods using the dimension properties from CuboidMaker.  Test your work by logging out your volume and surface area. 🦄 💪
   
